@@ -7,8 +7,9 @@ from dotenv import load_dotenv
 from app.handlers import router
 from aiogram.types import BotCommandScopeDefault
 from comands.comand_List import List
+TOKEN = getenv('TOKEN')
 
-bot = Bot(token=getenv('TOKEN'))
+bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
 
